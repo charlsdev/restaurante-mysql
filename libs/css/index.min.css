@@ -1,0 +1,64 @@
+@import url("TSSans.min.css");
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* font-weight: bold !important; */
+	font-family: 'PT Sans', sans-serif !important;
+}
+
+body {
+   background: #3d687aee;
+}
+
+.lblLogin {
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.iptLogin {
+   font-size: .85rem;
+}
+
+.btnLogin {
+   font-weight: 600;
+   padding: 3px 15px;
+}
+
+.rowLogin {
+   height: 100vh !important;
+}
+
+.formLogin {
+   border: 2px dotted #967171ad !important;
+   border-radius: 1rem;
+   padding: 12px 25px;
+   background: #dfdfdfab;
+}
+
+.imgLogin {
+   width: 150px;
+   margin: 15px auto;
+}
+
+.tittleLogin {
+   margin: 15px auto 0;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   font-style: italic;
+   border-radius: .5rem;
+   padding: 3px 25px;
+   background: #dadada88;
+   width: max-content;
+}
+
+.lblURL {
+   text-decoration: none;
+   font-style: italic;
+   font-weight: 600;
+   font-size: .8rem;
+   color: #333;
+   cursor: pointer;
+}
