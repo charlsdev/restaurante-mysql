@@ -26,6 +26,11 @@ body {
    padding: 3px 15px;
 }
 
+.btn.btnProcess {
+   font-weight: 600;
+   padding: 1px 15px !important;
+}
+
 .rowLogin {
    height: 100vh !important;
 }
@@ -61,4 +66,19 @@ body {
    font-size: .8rem;
    color: #333;
    cursor: pointer;
+}
+
+.titleInitials {
+   color: #1b1414;
+   text-transform: uppercase !important;
+   margin-bottom: 12px;
+   font-weight: 600;
+   font-size: 2rem;
+   letter-spacing: .5px;
+}
+
+.tittleModal {
+   font-weight: 600 !important;
+   text-transform: uppercase !important;
+   font-size: 1.25rem !important;
 }

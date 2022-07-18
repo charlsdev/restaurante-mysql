@@ -1,0 +1,17 @@
+body {
+   background: #52525258 !important;
+}
+
+.navbar {
+   margin-top: 15px;
+   border-radius: .5rem;
+   font-weight: 600;
+}
+
+.logaut {
+   font-size: .85rem;
+   font-style: italic;
+   border-radius: .5rem;
+   padding: 3px 25px;
+   background: #dadada88;
+}

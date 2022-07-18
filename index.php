@@ -1,5 +1,4 @@
       <?php
-         include "./config/ProtectRouters.php";
          include dirname(__FILE__) . './layouts/header.php';
       ?>
    </head>
@@ -12,7 +11,7 @@
                   <div class="row">
                      <div class="col-md-12 mx-auto text-center">
                         <div class="tittleLogin">Inicio de Sesión</div>
-                        <img src="./libs/img/login.png" alt="Login" class="mx-auto imgLogin" />
+                        <img src="./libs/img/restaurant.png" alt="Login" class="mx-auto imgLogin" />
                      </div>
                   </div>
                   
@@ -28,7 +27,10 @@
                      <a class="lblURL" href="register.php">No tienes una cuenta? ¡Registrate!</a>
                   </div>
                   <div class="mb-2 text-end">
-                     <button class="btn btn-outline-danger btn-sm btnLogin" onclick="loginUser();" >Iniciar Sesión</button>
+                     <button class="btn btn-outline-danger btn-sm btnLogin" onclick="loginUser();" >
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Iniciar Sesión
+                     </button>
                   </div>
                </div>
             </div>
@@ -36,7 +38,6 @@
       </div>
 
       <?php
-         // include "./layouts/footer.php";
          include dirname(__FILE__) . './layouts/footer.php';
       ?>
 
@@ -78,7 +79,7 @@
                         button: 'OK!'
                      }).then((value) => {
                         if (value) {
-                           window.location="./pages/welcome.php";
+                           window.location="./pages/";
                         }
                      })
                   } else {
@@ -91,7 +92,7 @@
                         })
                      } else {
                         swal({
-                           title: 'Usuario existente!',
+                           title: 'Error Server!',
                            text: "Ohhh¡ Error interno del server...",
                            icon: 'error',
                            button: 'OK!'

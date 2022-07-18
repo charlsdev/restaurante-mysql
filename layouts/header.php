@@ -1,10 +1,5 @@
 <?php
-	// $cedulaSession = $_SESSION['user'];
-	
-	// include ("../includes/DbConnect.php");
-	// $db = new DbConnect();
-	// $con = $db->connect();
-
+	include "./config/ProtectRouters.php";
 ?>
 
 <!doctype html>
@@ -15,6 +10,7 @@
 		
       <title>Restaurante - PHP - MYSQL</title>
 		
+		<link type="image/x-icon" href="libs/img/restaurant.ico" rel="shortcut icon" />
 		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="libs/fontawesome/all.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="libs/css/index.min.css">

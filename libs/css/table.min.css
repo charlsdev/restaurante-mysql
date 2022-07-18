@@ -1,0 +1,30 @@
+
+.dataTables_length label ,
+.dataTables_filter label,
+.dataTables_info,
+.pagination {
+   font-weight: 600 !important;
+   /* color: #ffe2e2; */
+   /* color: #e3e3e3; */
+}
+
+table {
+   font-size: .85rem;
+}
+
+table thead {
+   text-transform: uppercase;
+   background: #ff8e8e;
+}
+
+table thead tr th {
+   text-align: center !important;
+}
+
+table tbody {
+   background: #EDE4DA;
+}
+
+/* table tbody tr td {
+   text-align: right !important;
+} */

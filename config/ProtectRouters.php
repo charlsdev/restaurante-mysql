@@ -7,5 +7,5 @@
    if(!array_key_exists('user', $_SESSION)){
       
    } else {
-      if($_SESSION['user']) header("location: ./pages/welcome.php");
+      if($_SESSION['user']) header("location: ./pages");
    }

@@ -53,7 +53,10 @@
                         <a class="lblURL" href="./">Tienes una cuenta? ¡Iniciar Sesión!</a>
                      </div>
                      <div class="mb-2 text-end">
-                        <button type="button" class="btn btn-outline-primary btn-sm btnLogin" onclick="saveUser();">Registrarse</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm btnLogin" onclick="saveUser();">
+                           <i class="fa-solid fa-floppy-disk"></i>
+                           Registrarse
+                        </button>
                      </div>
                   </div>
                </div>
