@@ -115,7 +115,7 @@
          break;
 
       case 11:
-            if ($fnt->updatePLato($idPlato, $nombrePlato, $precioPlato, $tipoPlato)) {
+            if ($fnt->updatePlato($idPlato, $nombrePlato, $precioPlato, $tipoPlato)) {
                echo 'true';
             } else {
                echo 'false';
