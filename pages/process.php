@@ -17,6 +17,17 @@
    $nombrePlato = (isset($_POST['nombrePlato'])) ? $_POST['nombrePlato'] : '';
    $precioPlato = (isset($_POST['precioPlato'])) ? $_POST['precioPlato'] : '';
    $tipoPlato = (isset($_POST['tipoPlato'])) ? $_POST['tipoPlato'] : '';
+   
+   $idVenta = (isset($_POST['idVenta'])) ? $_POST['idVenta'] : '';
+   $cedCliente = (isset($_POST['cedCliente'])) ? $_POST['cedCliente'] : '';
+   $discapacidad = (isset($_POST['discapacidad'])) ? $_POST['discapacidad'] : '';
+   $mayorEdad = (isset($_POST['mayorEdad'])) ? $_POST['mayorEdad'] : '';
+   $cantidad = (isset($_POST['cantidad'])) ? $_POST['cantidad'] : '';
+   $tipoPago = (isset($_POST['tipoPago'])) ? $_POST['tipoPago'] : '';
+   $descuento = (isset($_POST['descuento'])) ? $_POST['descuento'] : '';
+   $subtotal = (isset($_POST['subtotal'])) ? $_POST['subtotal'] : '';
+   $iva = (isset($_POST['iva'])) ? $_POST['iva'] : '';
+   $total = (isset($_POST['total'])) ? $_POST['total'] : '';
 
    switch($opcion) {
       case 1:        
@@ -120,6 +131,38 @@
             } else {
                echo 'false';
             }
+
+         break;
+
+      case 12:        
+            $data = $fnt->allVentas();  
+            echo $data;
+
+         break;
+      
+      case 13:
+            if (
+               $fnt->saveVenta($idPlato, $cedCliente, $discapacidad, $mayorEdad, $cantidad, $tipoPago, $descuento, $subtotal, $iva, $total)
+            ) {
+               echo 'true';
+            } else {
+               echo 'false';
+            }
+
+         break;
+
+      case 14:
+            if ($fnt->deleteVenta($idVenta)) {
+               echo 'true';
+            } else {
+               echo 'false';
+            }
+
+         break;
+
+      case 15:        
+            $data = $fnt->rankingPlatos();  
+            echo $data;
 
          break;
    }
