@@ -1,5 +1,5 @@
       <?php
-         include dirname(__FILE__) . './layouts/header.php';
+         include './layouts/header.php';
       ?>
 
    </head>
@@ -7,7 +7,7 @@
    <body>
       <div class="container">
          <?php
-            include dirname(__FILE__) . './layouts/Navbar.php';
+            include './layouts/Navbar.php';
          ?>
 
          <br>
@@ -46,7 +46,7 @@
       </div>
 
       <?php
-         include dirname(__FILE__) . './layouts/footer.php';
+         include './layouts/footer.php';
       ?>
 
       <div class="modal fade" id="modalAddPlato" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

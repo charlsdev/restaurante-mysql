@@ -1,5 +1,5 @@
       <?php
-         require dirname(__FILE__) . './layouts/header.php';
+         include './layouts/header.php';
       ?>
    </head>
 
@@ -65,7 +65,7 @@
       </div>
 
       <?php
-         require dirname(__FILE__) . './layouts/footer.php';
+         include './layouts/footer.php';
       ?>
 
       <script>
